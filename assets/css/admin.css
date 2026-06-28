@@ -1,0 +1,60 @@
+/* ============================================================
+   Dumont Product Waitlist — admin
+   ============================================================ */
+
+.dumont-waitlist-filters {
+	margin: 1rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.dumont-waitlist-notify-bar {
+	margin: 0.5rem 0 1rem;
+	padding: 0.8rem 1rem;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-left: 4px solid #c4a870;
+	border-radius: 4px;
+	display: flex;
+	gap: 0.8rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dumont-waitlist-table td,
+.dumont-waitlist-table th {
+	vertical-align: middle;
+}
+
+.dumont-waitlist-actions {
+	white-space: nowrap;
+}
+
+.dumont-waitlist-actions .button {
+	margin: 2px 2px;
+}
+
+.dumont-waitlist-status {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 999px;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.dumont-waitlist-status--pending {
+	background: #fcf3e3;
+	color: #8a6d27;
+}
+
+.dumont-waitlist-status--notified {
+	background: #e7f4e7;
+	color: #2f7d2f;
+}
+
+.button-link-delete {
+	color: #b32d2e !important;
+	border-color: #b32d2e !important;
+}

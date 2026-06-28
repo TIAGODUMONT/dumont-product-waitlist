@@ -1,0 +1,95 @@
+/* ============================================================
+   Dumont Product Waitlist — formulário público
+   ============================================================ */
+
+.dumont-waitlist-form {
+	max-width: 420px;
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+}
+
+/* Honeypot anti-spam: fora da tela, mas acessível a bots. */
+.dumont-waitlist-form__hp {
+	position: absolute !important;
+	left: -9999px !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+}
+
+.dumont-waitlist-form__row {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+}
+
+.dumont-waitlist-form__row label {
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.dumont-waitlist-form__row input,
+.dumont-waitlist-form__row textarea {
+	width: 100%;
+	padding: 0.7rem 0.85rem;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 6px;
+	font: inherit;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.dumont-waitlist-form__row input:focus,
+.dumont-waitlist-form__row textarea:focus {
+	outline: none;
+	border-color: #c4a870;
+	box-shadow: 0 0 0 2px rgba(196, 168, 112, 0.25);
+}
+
+.dumont-waitlist-form__submit {
+	align-self: flex-start;
+	cursor: pointer;
+	padding: 0.8rem 1.6rem;
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	background: transparent;
+	font: inherit;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	transition: background 0.25s ease, color 0.25s ease;
+}
+
+.dumont-waitlist-form__submit:hover {
+	background: #1a2744;
+	color: #fff;
+	border-color: #1a2744;
+}
+
+.dumont-waitlist-form__submit[disabled] {
+	opacity: 0.6;
+	cursor: progress;
+}
+
+/* Mensagens de retorno */
+.dumont-waitlist__notice {
+	margin: 1rem 0;
+	padding: 0.9rem 1.1rem;
+	border-radius: 6px;
+	border-left: 4px solid;
+	font-size: 0.92rem;
+}
+
+.dumont-waitlist__notice--success {
+	background: #eef7ee;
+	border-color: #3c9a3c;
+	color: #1f5d1f;
+}
+
+.dumont-waitlist__notice--error {
+	background: #fcefef;
+	border-color: #c0392b;
+	color: #7d2018;
+}
